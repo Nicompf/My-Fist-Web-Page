@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Notas personales que no figuran en la pag-->
+
+<head>
+    <title>
+        My First Web Page
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="navbar">
+        <img id="logo" alt="Logo boke"
+            src="https://marketplace.canva.com/EAF65EWbuV0/4/0/1600w/canva-black-and-blue-simple-creative-illustrative-dragons-e-sport-logo-NO64HUH8vCA.jpg"
+            alt="">
+    </div>
+    <img id="boke" src="boke.jpg" alt="banner" height="240">
+    <h1>
+        A cerca de Boka
+    </h1>
+
+    <div id="about">
+        <div id="description">
+            <p style="margin-top: 0;">Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat</p>
+            <p>
+                Tambien Ofrecemos Mejor trato a los hichas de Boca Juniors
+            <ol>
+                <li>
+                    <a href="https://youtu.be/B523xnBkHUM?list=RDB523xnBkHUM" target="_blank">
+                        Full Boquita
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.crunchyroll.com/es" target="_blank">
+                        Boke Fulbo Bootcamp
+                    </a>
+                </li>
+            </ol>
+            </p>
+        </div>
+        <div id="team">
+            <img id="team image" alt="arg" src="arg.jpg" height="200">
+        </div>
+    </div>
+
+    <h2>Job Opportunities</h2>
+    <div id="jobs">
+        <table id="jobs-table">
+            <tr class="jobs-header-row">
+                <th rowspan="2">Job Title</th>
+                <th colspan="2">Location</th>
+                <th rowspan="2">Salary</th>
+                <th rowspan="2">Posted On</th>
+            </tr>
+            <tr class="jobs-header-row">
+                <th>City</th>
+                <th>Cuntry</th>
+            </tr>
+            <tr class="jobs-data-row">
+                <td>Fronted Developer</td>
+                <td>Cordoba</td>
+                <td>ARG</td>
+                <td>$1.200,000</td>
+                <td>Mar 3, 2024</td>
+            </tr>
+            <tr class="jobs-data-row">
+                <td>Full Stack Developer</td>
+                <td>Buenos Aires</td>
+                <td>ARG</td>
+                <td>$1.500,000</td>
+                <td>Feb 1, 2024</td>
+            </tr>
+            <tr class="jobs-data-row">
+                <td>Data Scientist</td>
+                <td>Bariloche</td>
+                <td>ARG</td>
+                <td>$1.500</td>
+                <td>Dec 22, 2023</td>
+            </tr>
+            <tr class="jobs-data-row">
+                <td>ML Engineer</td>
+                <td colspan="2">Remote</td>
+                <td>$80,000</td>
+                <td>Sep 19, 2023</td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="application">
+        <h2>Sumit You Application</h2>
+
+        <form 
+            id="application-form" 
+            action="https://formbold.com/s/obG10" 
+            method="POST" 
+            enctype="multipart/form-data"
+        >
+            <div class="form-group">
+                <label for="name">Full Name</label><br>
+                <!--br para agregar una linea y la caja del texto pase abajo del "Full Name"-->
+                <input type="text" id="name" name="Full name" required placeholder="Boquita">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email address" required placeholder="boke@example.com">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone</label><br>
+                <input type="tel" id="phone" name="phone" required placeholder="+948588585858">
+            </div>
+
+            <div class="form-group">
+                <label for="fecha nacimiento">Date of Birth</label><br>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <div class="form-group">
+                <label for="position">Position Applied for</label><br>
+                <select id="position" name="Position Applied" required>
+                    <option value="">Select position</option>
+                    <option value="frontend Developer">Fronted Developer</option>
+                    <option value="full stack Developer">Full Stack Developer</option>
+                    <option value="data Scientist">Data Scientist</option>
+                    <option value="ml Engineer">ML Engineer</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="resume">Upload Resume</label><br>
+                <input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx">
+            </div>
+
+            <div class="form-group">
+                <label for="coverletter">Cover Letter</label><br>
+                <textarea id="coverletter" name="coverletter" rows="5"
+                    placeholder="Explain what you suitable for the job..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="terms">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <!--input adentro de label para que el checkbox se seleccione cuandoo seleccionas el texto tmb-->
+                    I agree to the terms and conditions
+                </label>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="submit"> <!-- dentro de "value" va lo que se mostrara en pantalla-->
+            </div>
+        </form>
+
+    </div>
+
+    <div id="footer">
+        <ul id="footer-links">
+            <li>
+                <a href="https://www.youtube.com/watch?v=MLuDL-TlJgg&list=RDMMMLuDL-TlJgg&start_radio=1&ab_channel=Macklemore"
+                    target="_blank">
+                    Cursos
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/watch?v=B523xnBkHUM&list=RDB523xnBkHUM&start_radio=1&ab_channel=PopularMusic"
+                    target="_blank">
+                    Programas
+                </a>
+            </li>
+            <li>
+                <a href="https://youtu.be/B523xnBkHUM?list=RDB523xnBkHUM" target="_blank">
+                    Youtube
+                </a>
+            </li>
+        </ul>
+        <span class="copyrigth">© 2025, Nico</span>
+    </div>
+</body>
+
+</html>
